@@ -1,0 +1,51 @@
+.container{
+    position: relative;
+    text-align: center;
+    color: white;
+    font-family:Verdana, sans-serif;
+}
+.top-left{
+    position: absolute;
+    top:8px;
+    left:16px;
+}
+.centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+div.gllery{
+    color: black;
+    float: left;
+    width: 180px;
+}
+div.gallery img{
+    width: 25%;
+    height: 25%;
+    float: right;
+}
+div.desc{
+    padding: 15px;
+    text-align: left;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+.name container{
+    width: 500px;
+    height: 400px;
+    background: -moz-linear-gradient(
+        to right,
+        grey 0%,
+        blue 50%,
+        blue 100%
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

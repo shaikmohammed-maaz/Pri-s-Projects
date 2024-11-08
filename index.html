@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+function validateForm() {
+  let x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");a
+    return false;
+  }
+}
+</script>
+ <link rel="stylesheet" href="summary.css">
+</head>
+ <div class="pri">
+<body>
+<h1 id="mp">SUMMARY</h1>
+<form>
+  <p>first name*</p>
+ <input type="text" id="fname" name="fname" placeholder="first name....">
+  <p>last name*</p>
+  <input type="text" id="lname" name="lname"placeholder="last name...">
+<p>Enter your address*:</p>
+<input type="text" id="address" name="address"placeholder="address....">
+<p>Enter youre phone number*:</p>
+<input type="tel" id="phone" required pattern-"[0-9](3)-[0-9](3)-[0-9](4)"placeholder="xxxxxxxxxx"/>
+<p>Enter youre payment*:</p>
+<input type="number" id="payment" required placeholder="₹100,₹200,₹20,₹30" pattern="[0-20](5)-[0-30](5)-[0-100](10)">
+<p>Enter youre order</p>
+<select id="order" name="order">
+  <option value="cake">cake ₹100</option>
+  <option value="samosa">samosa ₹30</option>
+  <option value="pani puri">pani puri ₹50</option><br><br>
+   <input type="reset" value="Reset">
+ <h2>delivery</h2>
+<p>Credit card number*</p>
+<input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+<p>ExpMonth*</p>
+<select id="ExpMonth" name="ExpMonth">
+<option value="jan">jan</option>
+  <option value="feb">feb</option>
+  <option value="mar">mar</option>
+  <option value="apr">apr</option>
+  <option value="may">may</option>
+  <option value="jun">jun</option>
+  <option value="jul">jul</option>
+  <option value="aug">aug</option>
+  <option value="sept">sept</option>
+  <option value="oct">oct</option>
+  <option value="nov">nov</option>
+  <option value="dec">dec</option>
+  <label for="expyear">Exp Year</label>
+<select type="text" id="expyear" name="expyear" placeholder="2005">
+ <p>CVV*</p>
+<input type="text" id="cvv" name="cvv" placeholder="252">
+<p>expyear*</p>
+<select type="text" id="expyear" name="expyear" placeholder="2005">
+<option value="2000">2000</option>
+  <option value="2001">2001</option>
+  <option value="2002">2002</option>
+  <option value="2003">2003</option>
+  <option value="2004">2004</option>
+  <option value="2005">2005</option>
+  <option value="2006">2006</option>
+  <option value="2007">2007</option>
+  <option value="2008">2008</option>
+  <option value="2009">2009</option>
+  <option value="2010">2010</option>
+  <option value="2011">2011</option>
+  <option value="2012">2012</option>
+  <option value="2013">2013</option>
+  <option value="2014">2014</option>
+  <option value="2015">2015</option>
+  <option value="2016">2016</option>
+  <option value="2017">2017</option>
+  <option value="2018">2018</option>
+  <option value="2019">2019</option>
+  <option value="2020">2020</option>
+  <option value="2021">2021</option>
+  <option value="2022">2022</option>
+  <option value="2023">2023</option>
+  <option value="2024">2024</option>
+<label>
+ <input type="checkbox" checked="checked" na="sameadr"> Shipping address same as billing
+ </label>
+ <input type="submit" value="Continue to checkout" class="btn">
+ <input type="submit" value="submit">
+ </div>
+</form>
+</body>
+</html>
